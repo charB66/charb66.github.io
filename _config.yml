@@ -8,12 +8,12 @@ baseurl: '/'
 # disable_landing_page: true
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'charB66'
+  email: website.angler195@passinbox.com
+  twitter_username: charB66_
+  facebook_username: 
+  github_username:  charB66
+  linkedin_username:  bryan-ferreras-roca
 
 defaults:
   -
