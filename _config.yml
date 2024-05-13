@@ -27,6 +27,7 @@ defaults:
       path: 'pages'
       type: 'pages'
     values:
+        identifier: pages_site
         layout: 'page'
 
 # Build settings
