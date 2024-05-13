@@ -28,7 +28,7 @@
               {% for page in site.pages %}
               {% if page.identifier == 'pages_site' %}
                 <li class="navigation__item">
-                    <a href="{{ site.baseurl }}/ {{ page.url }}" title="link to {{ page.title }} page"
+                    <a href="{{ site.baseurl }}{{ page.url }}" title="link to {{ page.title }} page"
                     class="blog-button">{{ page.title }}</a></li>
                 </li>
               {% endif %}
