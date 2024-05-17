@@ -3,7 +3,7 @@ layout: post
 title:  "HTB writeup - Monitored"
 date:   2024-05-17 15:00
 categories: writeup
-tags: htb medium
+tag: htb medium
 ---
 ## Recon
 
