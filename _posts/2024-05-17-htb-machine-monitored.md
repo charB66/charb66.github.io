@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Writeup HTB machine - Monitored"
-date:   2024-05-17
+date:   2024-05-17 +04:00
 categories: ["writeup"]
 tag: ["htb", "nagios", "medium"]
 ---
