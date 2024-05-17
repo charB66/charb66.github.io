@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "HTB writeup - Monitored"
-date:   2024-05-12 19:00
-categories: divers
-tag: self
+date:   2024-05-17 15:00
+categories: writeup
+tag: htb medium
 ---
 ## Recon
 
