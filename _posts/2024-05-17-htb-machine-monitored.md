@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bienvenue sur mon cyberjournal 📖"
+title:  "HTB writeup - Monitored"
 date:   2024-05-12 19:00
 categories: divers
 tag: self
@@ -45,7 +45,7 @@ PORT    STATE SERVICE  VERSION
 ## Foothold
 ### Nagios
 Ports 80,443 are used by Apache/2.4.56.  
-![[Pasted image 20240504145019.png]]
+![nagios](../images/monitored1.png)
 
 After hours of enumeration, nothing... just discovered some nagios api endpoints.  
 Perhaps I should do an `UDP` scan.
