@@ -5,7 +5,7 @@ date:   2024-05-17 +04:00
 categories: ["writeup"]
 tag: ["htb", "nagios", "medium"]
 ---
-## Recon
+## 👀 Recon
 
 **NMAP**
 ```
@@ -42,7 +42,7 @@ PORT    STATE SERVICE  VERSION
 
 `http-title: Did not follow redirect to https://nagios.monitored.htb/` is useful, let's add this domain to my `/etc/hosts` file in order to hit the vhost!
 
-## Foothold
+## 🐾 Foothold
 ### Nagios
 Ports 80,443 are used by Apache/2.4.56.  
 ![monitored1](/images/blog/writeup/monitored/monitored1.png)
@@ -149,7 +149,7 @@ The button ton run the `Service`.
 ![monitored17](/images/blog/writeup/monitored/monitored17.png)
 Let's go we have our entry point!  
 
-## Privesc
+## 🪜 Privesc
 
 After loooong enumeration, I understood the attack path...!  
 
