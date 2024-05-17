@@ -252,4 +252,4 @@ Ncat: Listening on 0.0.0.0:1998
 Then, I start the service from `/usr/local/nagiosxi/scripts/manage_services.sh`:  
 ![monitored20](/images/blog/writeup/monitored/monitored20.png)
 
-<span style="align:center">**PWNED**!</span>
+<span style="align:center">**PWNED!**</span>
