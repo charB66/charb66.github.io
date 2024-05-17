@@ -1,10 +1,16 @@
 ---
 layout: post
 title:  "Writeup HTB machine - Monitored"
+description: "Complete writeup for the medium machine 'Monitored' from HTB!"
 date:   2024-05-17 +04:00
 categories: ["writeup"]
 tag: ["htb", "nagios", "medium"]
 ---
+
+<p align="center">
+  <img src="/images/blog/writeup/monitored/monitored.webp" alt="Machine logo"/>
+</p>
+
 ## 👀 Recon
 
 **NMAP**
