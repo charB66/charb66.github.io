@@ -45,7 +45,7 @@ PORT    STATE SERVICE  VERSION
 ## Foothold
 ### Nagios
 Ports 80,443 are used by Apache/2.4.56.  
-![nagios](../images/monitored1.png)
+![nagios](/images/monitored1.png)
 
 After hours of enumeration, nothing... just discovered some nagios api endpoints.  
 Perhaps I should do an `UDP` scan.
