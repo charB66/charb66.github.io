@@ -2,8 +2,8 @@
 layout: post
 title:  "Writeup HTB machine - Monitored"
 date:   2024-05-17 16:00 +02:00
-categories: writeup
-tag: htb
+categories: ["writeup"]
+tag: ["htb", "nagios", "medium"]
 ---
 ## Recon
 
