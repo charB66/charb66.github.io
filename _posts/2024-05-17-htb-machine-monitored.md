@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bienvenue sur mon cyberjournal 📖"
+title:  "Writeup HTB machine - Monitored"
 date:   2024-05-12 19:00
 categories: divers
 tag: self
