@@ -5,6 +5,7 @@ date:   2024-05-17 15:00
 categories: writeup
 tag: htb
 ---
+
 ## Recon
 
 **NMAP**
@@ -45,7 +46,7 @@ PORT    STATE SERVICE  VERSION
 ## Foothold
 ### Nagios
 Ports 80,443 are used by Apache/2.4.56.  
-![alt text](/images/blog/writeup/monitored/monitored1.png)
+![monitored1](/images/blog/writeup/monitored/monitored1.png)
 
 After hours of enumeration, nothing... just discovered some nagios api endpoints.  
 Perhaps I should do an `UDP` scan.
