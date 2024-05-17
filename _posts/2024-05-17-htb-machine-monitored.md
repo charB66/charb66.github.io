@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Writeup HTB machine - Monitored"
-date:   2024-05-12 19:00
+date:   2024-05-17 16:00
 categories: writeup
 tag: htb
 ---
