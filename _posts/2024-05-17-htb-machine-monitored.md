@@ -2,7 +2,7 @@
 layout: post
 title:  "Writeup HTB machine - Monitored"
 date:   2024-05-12 19:00
-categories: divers
+categories: writeup
 tag: self
 ---
 ## Recon
