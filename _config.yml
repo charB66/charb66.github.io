@@ -29,10 +29,6 @@ defaults:
     values:
         identifier: pages_site
         layout: 'page'
-  - scope:
-      path: "images"
-    values:
-      image: true
 
 # Build settings
 destination: _site
