@@ -92,15 +92,18 @@ After some enumeration, I found on various sources (like forums and nagios docum
 
 Plus [here](https://www.nagios.org/ncpa/help/2.0/api.html):  
 ![monitored5](/images/blog/writeup/monitored/monitored5.png)
+
 Let's go.
-```txt
+
+```bash
 curl -d 'username=svc&password=XjH7VCehowpR1xZB' -k https://nagios.monitored.htb/nagiosxi/api/v1/authenticate  
 ```
 
 ![monitored6](/images/blog/writeup/monitored/monitored6.png)
 I got the `token`, next let's try to authenticate:  
 ![monitored7](/images/blog/writeup/monitored/monitored7.png)
-```txt
+
+```bash
 https://nagios.monitored.htb/nagiosxi/?token=03e88dd4a29c1a57144ecdc41dcb8dee5577bf28
 ```
 ![monitored8](/images/blog/writeup/monitored/monitored8.png)
