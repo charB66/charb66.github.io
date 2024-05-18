@@ -14,7 +14,7 @@ tag: ["htb", "nagios", "medium"]
 ## 👀 Recon
 
 **NMAP**
-```
+```bash
 PORT    STATE SERVICE  VERSION
 22/tcp  open  ssh      OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)
 | ssh-hostkey:
@@ -57,7 +57,7 @@ After hours of enumeration, nothing... just discovered some nagios api endpoints
 Perhaps I should do an `UDP` scan.
 
 **NMAP UDP scan**
-```txt
+```bash
 Nmap scan report for nagios.monitored.htb (10.10.11.248)
 Host is up (0.033s latency).
 Not shown: 996 closed udp ports (port-unreach)
