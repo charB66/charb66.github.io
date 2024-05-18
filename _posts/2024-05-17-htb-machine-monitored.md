@@ -220,8 +220,10 @@ fi
 
 Let's resume:
 - We have rights to execute some services but binaries do not exist. 
-- `manage_services.sh` permits to run service with `systemctl`.
+- `manage_services.sh` permits to run service with `systemctl`.  
+
 Ok so, in the case `npcd` is started from `systemctl`, I need to check `systemd` service configuration:
+
 ```bash
 nagios@monitored:~$ cat /etc/systemd/system/npcd.service
 [Unit]
@@ -240,6 +242,7 @@ Can I edit the binary located at `/usr/local/nagios/bin/npcd`?
 nagios@monitored:~$ ls -l /usr/local/nagios/bin/npcd
 -rwxr-xr-x 1 nagios nagios 62 May  7 14:19 /usr/local/nagios/bin/npcd
 ```
+
 Hum, like it!  
 
 First, I just put my revshell into:
