@@ -133,7 +133,7 @@ Ressources:
 - `api endpoint` : https://support.nagios.com/forum/viewtopic.php?t=42923
 - `api admin parameter` : https://raw.githubusercontent.com/rapid7/metasploit-framework/fc3199259b72e20da222480e8cd9734511a50ab8/modules/exploits/linux/http/nagios_xi_chained_rce_2_electric_boogaloo.rb
 
-`admin` section contains interesting features in `core config manager` [here](https://nagios.monitored.htb/nagiosxi/includes/components/ccm/xi-index.php):  
+`admin` section contains interesting features in `core config manager` (`https://nagios.monitored.htb/nagiosxi/includes/components/ccm/xi-index.php`):  
 ![monitored14](/images/blog/writeup/monitored/monitored14.png)
 `Services` and `Commands` sections.  
 
