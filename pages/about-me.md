@@ -8,6 +8,7 @@ tag: self
 Passionné d'IT, je suis en constante veille et apprentissage.
 
 ✨ Mantras
-- Je ne perds jamais, soit j'apprends, soit je gagne. - Nelson Mandela
+- Je ne perds jamais, soit je gagne, soit j'apprends.
 - Qui Ose Gagne. - 1er
+- Au-delà du possible. - 13ème
 - Dans la vie, chaque étape est importante ; rien n'est échec, mais bien une expérience supplémentaire.
