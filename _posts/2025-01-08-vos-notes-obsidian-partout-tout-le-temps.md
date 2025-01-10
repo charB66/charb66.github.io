@@ -162,11 +162,11 @@ Sélectionnez le dossier du repository puis créez une note en guise de test.
 
 Le repository est configuré et utilisé, mais pour le moment `Obsidian` ne gère pas lui même les commits, push, pull... il convient donc d'ajouter le plugin communautaire `Git` dans `Obsidian`.  
 
-Rendez-vous dans les réglages et activez les `Community plugins`.
+Rendez-vous dans les réglages et activez les `Community plugins`.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-7.png)  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-8.png)  
 
-Cliquez sur `Browse` puis recherchez le plugin `Git`.
+Cliquez sur `Browse` puis recherchez le plugin `Git`.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-9.png)  
 
 Sélectionnez le plugin et cliquez sur `Install`, attendez l'installation puis cliquez sur `Enable`. Une fois l'activation terminée, cliquez sur `Options`. Je conseille d'activer la synchronisation automatique, cela simplifie l'usage, en particulier dans l'application mobile.  
@@ -208,7 +208,6 @@ En premier lieu, il convient de créer le `vault Obsidian` dans l'application mo
 Celui-ci doit avoir exactement le même nom que le dossier du repository de vos notes sur votre ordinateur. Si votre dossier se nomme `notes_perso`, votre `vault Obsidian` doit se nommer `notes_perso`.
 
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-15.png)  
-
 Appuyez sur `Create new vault` puis, dans l'écran suivant saisissez le nom et laissez décochée la case `Store in iCloud`.  
 
 Décompressez l'archive .zip.  
@@ -226,7 +225,7 @@ Défilez en bas de l'écran et appuyez sur `Turn on community plugins`.
 Appuyez sur `Browse` puis recherchez `Git`. Sélectionnez le premier de la liste, appuyez sur `Install` > `Enable` puis `Options`.
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-19.png)  
 
-Un nouvel écran apparaît vous demandant votre `username`, renseignez votre nom d'utilisateur `GitHub`. Une fois validé un autre écran apparaît vous demandant votre `Password/Personal access token`, renseignez votre `token (classic)` créé précédemment.
+Un nouvel écran apparaît vous demandant votre `username`, renseignez votre nom d'utilisateur `GitHub`. Une fois validé un autre écran apparaît vous demandant votre `Password/Personal access token`, renseignez votre `token (classic)` créé précédemment.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-20.png)  
 
 ### 2.12 Test de bon fonctionnement multiplateforme
