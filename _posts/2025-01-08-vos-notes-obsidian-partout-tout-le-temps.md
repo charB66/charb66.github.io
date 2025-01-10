@@ -19,7 +19,7 @@ Dans l'IT et particulièrement en cybersécurité il est important de synchronis
 
 **Prérequis** :
 - Un `vault Obsidian` existant.
-- Le plugin communautaire `Git` fonctionnel dans son `vault` (s'il ne vous manque que ce point, sautez au chapitre [[#2.7 Configuration de Git dans Obsidian]] !)
+- Le plugin communautaire `Git` fonctionnel dans son `vault` (s'il ne vous manque que ce point, sautez au chapitre `2.7 Configuration de Git dans Obsidian !`)
 
 **Étapes** :
 1. Créez un `token (classic)` dans les [réglages développeur](https://github.com/settings/tokens) avec le périmètre `repo Full control of private repositories`.
