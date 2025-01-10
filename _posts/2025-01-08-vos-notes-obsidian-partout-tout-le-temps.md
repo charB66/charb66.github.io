@@ -233,7 +233,7 @@ Un nouvel écran apparaît vous demandant votre `username`, renseignez votre nom
 Il est temps de tester le bon fonctionnement de la synchronisation entre l'application mobile et celle de votre ordinateur.  
 
 Modifier une note dans l'application mobile puis pousser les changements sur votre repository `GitHub`.  
-Pour cela je vous conseille de passer par le panneau `source control view`. Afin d'afficher la `Command palette` sur l'application vous devez swiper de haut en bas (pour rappel `CTRL` + `P` sur le client lourd de votre ordinateur).
+Pour cela je vous conseille de passer par le panneau `source control view`. Afin d'afficher la `Command palette` sur l'application vous devez swiper de haut en bas (pour rappel `CTRL` + `P` sur le client lourd de votre ordinateur).  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-21.png)  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-22.png)  
 
