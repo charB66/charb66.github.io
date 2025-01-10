@@ -218,7 +218,7 @@ Déplacer le dossier du repository dans le dossier de l'application mobile `Obsi
 
 ### 2.11 Configuration du vault 
 
-Rendez-vous dans les réglages : `Settings` > `Community plugins`.
+Rendez-vous dans les réglages : `Settings` > `Community plugins`.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-18.png)  
 
 Défilez en bas de l'écran et appuyez sur `Turn on community plugins`.  
