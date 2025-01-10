@@ -59,7 +59,7 @@ Je détaille dans cet article comment **synchroniser** sur son ordinateur et son
 Commençons par la création du repository sur `GitHub`. Le premier point sur lequel il est intéressant de vous pencher est sa visibilité : privé ou publique ?
 Supposons que ce repository soit pour une prise de note personnelle, il se peut qu'il contienne des données à caractère personnel (`DCP`) ; respectons donc le `Zero Trust` en créant un repository privé.
 
-![[Pasted image 20241223170718.png]]
+![[obsidian-sync-1.png]]
 
 ### 2.2 Création et configuration du token
 
@@ -72,7 +72,7 @@ Ensuite, cliquez sur `Generate new token` > `Generate new token (classic)` puis 
 - Le périmètre : quel sera le rôle de votre `token` ? Gérer le repository des notes via l'application `Obsidian`.
 	- `repo Full control of private repositories` est parfait pour cela.
 
-![[Pasted image 20241223173708.png]]
+![[obsidian-sync-2.png]]
 
 Enfin, défilez en bas de page puis cliquez sur `Generate token`.
 
@@ -82,7 +82,7 @@ Enfin, défilez en bas de page puis cliquez sur `Generate token`.
 
 Dorénavant, tout est prêt ! 👏
 C'est le moment de cloner le repository sur votre ordinateur. Rendez-vous sur la page du repository tout juste créé, sélectionnez le protocole `HTTPS` puis copiez l'url.
-![[Pasted image 20241226151422.png]]
+![[obsidian-sync-3.png]]
 Clonez le repository en ligne de commande :
 ```bash
 git clone https://github.com/charB66/notes_blog_demo.git
@@ -91,7 +91,7 @@ git clone https://github.com/charB66/notes_blog_demo.git
 Une authentification est nécessaire, il vous sera demandé de renseigner votre nom d'utilisateur `GitHub` et votre mot de passe. Le mot de passe à utiliser est votre `token GitHub` que vous venez de générer. 
 
 Un message avertissant que votre repository est vide devrait apparaître, c'est normal, vous pouvez l'ignorer.
-![[Pasted image 20241226151839.png]]
+![[obsidian-sync-4.png]]
 
 Avant de continuer, il faut s'assurer que le repository a bien été cloné avec le protocole `HTTPS`, pour cela il faut regarder  l'url distante configurée dans le `.git`.
 
@@ -154,40 +154,40 @@ git push
 ### 2.7 Configuration de Git dans Obsidian
 
 Dans `Obsidian`, ouvrez un dossier en tant que `vault`.
-![[Pasted image 20241226154930.png]]
+![[obsidian-sync-5.png]]
 
 Sélectionnez le dossier du repository puis créez une note en guise de test.
-![[Pasted image 20241226155143.png]]
+![[obsidian-sync-6.png]]
 
 Le repository est configuré et utilisé, mais pour le moment `Obsidian` ne gère pas lui même les commits, push, pull... il convient donc d'ajouter le plugin communautaire `Git` dans `Obsidian`.
 
 Rendez-vous dans les réglages et activez les `Community plugins`.
-![[Pasted image 20241226155447.png]]
-![[Pasted image 20241226155633.png]]
+![[obsidian-sync-7.png]]
+![[obsidian-sync-8.png]]
 
 Cliquez sur `Browse` puis recherchez le plugin `Git`.
-![[Pasted image 20241226155739.png]]
+![[obsidian-sync-9.png]]
 
 Sélectionnez le plugin et cliquez sur `Install`, attendez l'installation puis cliquez sur `Enable`. Une fois l'activation terminée, cliquez sur `Options`. Je conseille d'activer la synchronisation automatique, cela simplifie l'usage, en particulier dans l'application mobile.
-![[Pasted image 20241226162038.png]]
+![[obsidian-sync-10.png]]
   
 ### 2.8 Test de bon fonctionnent
 
 Pour s'assurer du bon fonctionnement il est judicieux de modifier une note puis de pousser la mise à jour sur `GitHub`.
 
 Une petite astuce pratique pour suivre le statut du repository est d’utiliser le panneau latéral `Source control` (sur la droite ci-dessous).
-![[Pasted image 20241226164416.png]]
+![[obsidian-sync-11.png]]
 
 Pour l'afficher, faites le raccourci clavier `CTRL` + `P` puis saisir `control view` :
-![[Pasted image 20241226164533.png]]
+![[obsidian-sync-12.png]]
 
 Ce panneau permet de suivre les fichiers staged, pushed et pulled. Mais surtout via les commande situées dans la partie supérieure, de manuellement push, pull etc.
 
 Enfin, modifiez une note puis poussez manuellement la modification.
-![[Pasted image 20241226165425.png]]
+![[obsidian-sync-13.png]]
 
 Pensez à également vérifier sur `GitHub` que la note a bien été mise à jour.
-![[Pasted image 20241226165526.png]]
+![[obsidian-sync-14.png]]
 
 ### 2.9 Compression et téléchargement du vault
 
@@ -206,25 +206,25 @@ Cette commande crée une archive .zip, téléchargez là sur votre téléphone p
 En premier lieu, il convient de créer le `vault Obsidian` dans l'application mobile.
 Celui-ci doit avoir exactement le même nom que le dossier du repository de vos notes sur votre ordinateur. Si votre dossier se nomme `notes_perso`, votre `vault Obsidian` doit se nommer `notes_perso`.
 
-![[image7 1.png]]
+![[obsidian-sync-15.png]]
 Appuyez sur `Create new vault` puis, dans l'écran suivant saisissez le nom et laissez décochée la case `Store in iCloud`.
 
 Décompressez l'archive .zip.
-![[image5.png]]
+![[obsidian-sync-16.png]]
  Déplacer le dossier du repository dans le dossier de l'application mobile `Obsidian` (`Files` > `On My iPhone` > `Obsidian`). Si le nom est correct, un message vous avertissant qu'un dossier du même nom existe déjà ; choisissez "Replace".
- ![[image4.png]]
+  ![[obsidian-sync-17.png]]
 
 ### 2.11 Configuration du vault 
 
 Rendez-vous dans les réglages : `Settings` > `Community plugins`.
-![[image3.png]]
+![[obsidian-sync-18.png]]
 
 Défilez en bas de l'écran et appuyez sur `Turn on community plugins`.
 Appuyez sur `Browse` puis recherchez `Git`. Sélectionnez le premier de la liste, appuyez sur `Install` > `Enable` puis `Options`.
-![[B7D91B9B-0357-49CC-A582-7071DD029788.png]]
+![[obsidian-sync-19.png]]
 
 Un nouvel écran apparaît vous demandant votre `username`, renseignez votre nom d'utilisateur `GitHub`. Une fois validé un autre écran apparaît vous demandant votre `Password/Personal access token`, renseignez votre `token (classic)` créé précédemment.
-![[image2.png]]
+![[obsidian-sync-20.png]]
 
 ### 2.12 Test de bon fonctionnement multiplateforme
 
@@ -232,8 +232,8 @@ Il est temps de tester le bon fonctionnement de la synchronisation entre l'appli
 
 Modifier une note dans l'application mobile puis pousser les changements sur votre repository `GitHub`.
 Pour cela je vous conseille de passer par le panneau `source control view`. Afin d'afficher la `Command palette` sur l'application vous devez swiper de haut en bas (pour rappel `CTRL` + `P` sur le client lourd de votre ordinateur).
-![[image1 1.png]]
-![[image0 1.png]]
+![[obsidian-sync-21.png]]
+![[obsidian-sync-22.png]]
 
 1. `Backup` : permet de sauvegarder et pousser vos modifications sur votre repository distant (`git add` ; `git commit` ; `git push`).
 2. `git push` : permet de pousser vos modifications sur votre repository distant.
