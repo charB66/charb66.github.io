@@ -8,6 +8,6 @@ tag: ["obsidian"]
 ---
 
 <p align="center">
-  <img src="/images/blog/articles/notes-obsidian-sync/notes-obsidian.jpeg" alt="Banniere article"/>
+  <img src="/images/blog/articles/obsidian-notes-sync-mobile/notes-obsidian.jpeg" alt="Banniere article"/>
 </p>
 
