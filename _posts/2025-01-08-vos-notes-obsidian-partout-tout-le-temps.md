@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Vos notes Obsidian, partout, tout le temps"
-description: "Dans l'IT et particulièrement en cybersécurité il est important de synchroniser ses notes sur tous nos supports, ordinateur, téléphone portable, etc. Il est tout à fait possible de répondre à ce besoin en utilisant Obsidian, son plugin communautaire Git et un repository sur GitHub."
+description: "Et si vos notes Obsidian étaient synchronisées partout ?"
 date:   2025-01-10
 categories: ["notes", "productivité"]
 tag: ["obsidian"]
