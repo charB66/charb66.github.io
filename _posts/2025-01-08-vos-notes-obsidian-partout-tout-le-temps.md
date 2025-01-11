@@ -13,13 +13,15 @@ tag: ["obsidian"]
 
 ## ⚡️ TL;DR {#tldr}
 
-Dans l'IT et particulièrement en cybersécurité il est important de synchroniser ses notes sur tous nos supports, ordinateur, téléphone portable, etc. Il est tout à fait possible de répondre à ce besoin en utilisant `Obsidian`, son plugin communautaire `Git` et un repository sur `GitHub`.
+>💡 Une précision avant de commencer  
+ Le TL;DR s'adresse à ceux qui ont déjà un repository Git fonctionnel pour la synchronisation de leurs notes. Si c'est votre cas, vous pouvez suivre directement les étapes résumées ici.
+ En revanche, si vous partez de zéro ou n'avez pas encore configuré de repository Git, je vous invite à lire l'article en entier, qui explique chaque étape en détail.
 
-> Si vous utilisez déjà un repository `Github` pour synchroniser vos notes, vous pouvez suivre les étapes ci-dessous, vous gagnerez du temps. 😎
+Dans l'IT et particulièrement en cybersécurité il est important de synchroniser ses notes sur tous nos supports, ordinateur, téléphone portable, etc. Il est tout à fait possible de répondre à ce besoin en utilisant `Obsidian`, son plugin communautaire `Git` et un repository sur `GitHub`.
 
 **Prérequis** :
 - Un `vault Obsidian` existant.
-- Le plugin communautaire `Git` fonctionnel dans son `vault` (s'il ne vous manque que ce point, sautez au chapitre `2.7 Configuration de Git dans Obsidian !`)
+- Le plugin communautaire `Git` fonctionnel dans son `vault` (s'il ne vous manque que ce point, sautez au chapitre [2.7 Configuration de Git dans Obsidian](#configuration-git-obsidian) puis revenez-ici 😊)
 
 **Étapes** :
 1. Créez un `token (classic)` dans les [réglages développeur](https://github.com/settings/tokens) avec le périmètre `repo Full control of private repositories`.
@@ -34,6 +36,7 @@ Dans l'IT et particulièrement en cybersécurité il est important de synchronis
 ## 📜 Table des matières
 
 1. [🤔 POURQUOI ?](#pourquoi)  
+  1.1 [BÉNÉFICES](#benefices)  
 2. [🏗️ MISE EN PLACE](#mise-en-place)  
   2.1 [Création du repository sur GitHub](#creation-repository)  
   2.2 [Création et configuration du token](#creation-token)  
@@ -63,7 +66,25 @@ Outre le fait d'utiliser - le bon outil de prise de note - il est primordial de 
 
 Un point est commun aux critères ci-dessus : **le stockage**, et qui dit stockage, dit **synchronisation**.
 
+### 1.1 [BÉNÉFICES](#benefices) {#benefices}
+
+
+La synchronisation automatique des notes évite la multiplication des applications et/ou supports de notes. En n'ayant pas à rechercher **sur quel support** vous avez stocké votre note (sur mon téléphone ou mon ordinateur ?) ni **dans quelle application** (Obsidian ? Notion ? Mon application notes ? Un papier ?), l'accès à l'information est fluide et rapide. Cette fluidité est importante car il est vital de pouvoir se concentrer sur le contenu de la note et non la "logistique" autour. Il n'est déjà évident de prendre une note, il faut analyser l'information, la synthétiser... alors si à cela, vous ajoutez du "bruit" à votre pensée, vous vous éloignez de l'essence même du principe de prise de note.
+
+### Gain de productivité
+
+Pour les mêmes raisons listées dans le gain de temps, la productivité de vos prise de notes se voit grandement amplifiée. Celle-ci sont plus rapides à rédiger, à retrouver, à modifier. Puis, une nouvelle fois, ne plus réfléchir à la gestion des notes favorise la clarté de penser et donc la pertinence du contenu.
+
+### Sécurité et fiabilité
+
+La synchronisation via un repository `GitHub` est un excellent choix pour plusieurs raisons. Vous retrouvez les mêmes notes, à jour, partout. Vos notes sont versionnées avec de nombreux commits, ce qui vous permets à tout moment de revenir en arrière en cas de mauvaise modification, suppression par erreur...
+
+### Disponibilité constante
+
+L'avantage d'utiliser `GitHub` pour la synchronisation est que **vos notes sont disponibles partout, tout le temps**. Vous y avez accès sur tous vos supports, fixes, mobiles... et si vous n'avez pas accès à ceux-ci - par exemple en déplacement - vous pouvez les retrouver depuis n'importe quel navigateur web, directement sur le site de `GitHub` !
+
 Je détaille dans cet article comment **synchroniser** sur son ordinateur et son téléphone portable ses notes prises avec `Obsidian`.
+
 ## [2. 🏗️ MISE EN PLACE](#mise-en-place) {#mise-en-place}
 
 > Je veillerai à être aussi complet que possible dans mes explications, tout en évitant les informations superflues.
@@ -167,6 +188,7 @@ git push
 ```
 ### [2.7 Configuration de Git dans Obsidian](#configuration-git-obsidian) {#configuration-git-obsidian}
 
+
 Dans `Obsidian`, ouvrez un dossier en tant que `vault`.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-5.png)  
 
@@ -185,6 +207,8 @@ Cliquez sur `Browse` puis recherchez le plugin `Git`.
 Sélectionnez le plugin et cliquez sur `Install`, attendez l'installation puis cliquez sur `Enable`. Une fois l'activation terminée, cliquez sur `Options`. Je conseille d'activer la synchronisation automatique, cela simplifie l'usage, en particulier dans l'application mobile.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-10.png)  
   
+>💡 **Si vous êtes arrivé ici depuis le TL;DR je vous invite à y [cliquer ici](#tldr) pour reprendre votre lecture 😉**
+
 ### [2.8 Test de bon fonctionnent](#test-fonctionnement) {#test-fonctionnement}
 
 Pour s'assurer du bon fonctionnement il est judicieux de modifier une note puis de pousser la mise à jour sur `GitHub`.  
@@ -257,24 +281,7 @@ Pour cela je vous conseille de passer par le panneau `source control view`. Afin
 
 Et voici, vous avez vos notes automatiquement synchronisées sur vos différents supports. 👏
 
-## 3. 🏆 BÉNÉFICES
-
-
-La synchronisation automatique des notes évite la multiplication des applications et/ou supports de notes. En n'ayant pas à rechercher **sur quel support** vous avez stocké votre note (sur mon téléphone ou mon ordinateur ?) ni **dans quelle application** (Obsidian ? Notion ? Mon application notes ? Un papier ?), l'accès à l'information est fluide et rapide. Cette fluidité est importante car il est vital de pouvoir se concentrer sur le contenu de la note et non la "logistique" autour. Il n'est déjà évident de prendre une note, il faut analyser l'information, la synthétiser... alors si à cela, vous ajoutez du "bruit" à votre pensée, vous vous éloignez de l'essence même du principe de prise de note.
-
-### Gain de productivité
-
-Pour les mêmes raisons listées dans le gain de temps, la productivité de vos prise de notes se voit grandement amplifiée. Celle-ci sont plus rapides à rédiger, à retrouver, à modifier. Puis, une nouvelle fois, ne plus réfléchir à la gestion des notes favorise la clarté de penser et donc la pertinence du contenu.
-
-### Sécurité et fiabilité
-
-La synchronisation via un repository `GitHub` est un excellent choix pour plusieurs raisons. Vous retrouvez les mêmes notes, à jour, partout. Vos notes sont versionnées avec de nombreux commits, ce qui vous permets à tout moment de revenir en arrière en cas de mauvaise modification, suppression par erreur...
-
-### Disponibilité constante
-
-L'avantage d'utiliser `GitHub` pour la synchronisation est que **vos notes sont disponibles partout, tout le temps**. Vous y avez accès sur tous vos supports, fixes, mobiles... et si vous n'avez pas accès à ceux-ci - par exemple en déplacement - vous pouvez les retrouver depuis n'importe quel navigateur web, directement sur le site de `GitHub` !
-
-## [4. 🔄 RETOUR D'EXPÉRIENCE](#retex) {#retex}
+## [3. 🔄 RETOUR D'EXPÉRIENCE](#retex) {#retex}
 
 J'ai trouvé peu de ressources concernant les possibilités de synchronisation des notes sans passer par l'option payante d'`Obsidian`. Avec un peu de recherche, j'ai trouvé quelques informations sur des forums, des threads `Reddit`, le plus pertinent est ce [post](https://forum.obsidian.md/t/obsidian-git-sync-on-your-ios-without-any-extra-app/60639) sur le forum officiel `Obsidian`, mais cela reste succinct. Voici l'origine de ma volonté de vulgariser la procédure.  
 
@@ -282,7 +289,7 @@ Après 1 mois d'utilisation je suis conquis. Je prends plus de notes qu'auparava
 
 Je tiens à préciser que la facilité de prise de note peut mener à une surcharge informationnelle. Vous pouvez accumuler trop de données sans les structurer ni les prioriser. Une accumulation excessive des notes peut engendrer un encombrement cognitif, réduisant votre capacité à hiérarchiser et exploiter efficacement les données. Cela tombe bien, un article sur la méthodologie de prise de notes est en cours de rédaction. 😉
 
-## [5. 🗝️ EN RÉSUMÉ](#en-resume) {#en-resume}
+## [4. 🗝️ EN RÉSUMÉ](#en-resume) {#en-resume}
 
 Le procédé n'est pas facile au premier abord et il convient d'être à l'aise avec la manipulation de votre téléphone portable et de `Git`. Une fois ce "gap" technique passé, les avantages sont notables et valent le coup d'investir des efforts à l'acquisition des connaissances techniques.  
 
