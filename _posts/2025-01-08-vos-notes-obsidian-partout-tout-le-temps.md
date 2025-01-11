@@ -36,7 +36,7 @@ tag: ["obsidian"]
 ## 📜 Table des matières
 
 1. [🤔 POURQUOI ?](#pourquoi)  
-  1.1 [BÉNÉFICES](#benefices)  
+  1.1 [Bénéfices](#benefices)  
 2. [🏗️ MISE EN PLACE](#mise-en-place)  
   2.1 [Création du repository sur GitHub](#creation-repository)  
   2.2 [Création et configuration du token](#creation-token)  
