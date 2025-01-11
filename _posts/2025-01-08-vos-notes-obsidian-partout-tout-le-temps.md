@@ -282,7 +282,7 @@ Après 1 mois d'utilisation je suis conquis. Je prends plus de notes qu'auparava
 
 Je tiens à préciser que la facilité de prise de note peut mener à une surcharge informationnelle. Vous pouvez accumuler trop de données sans les structurer ni les prioriser. Une accumulation excessive des notes peut engendrer un encombrement cognitif, réduisant votre capacité à hiérarchiser et exploiter efficacement les données. Cela tombe bien, un article sur la méthodologie de prise de notes est en cours de rédaction. 😉
 
-## 5. 🗝️ EN RÉSUMÉ {#en-resume}
+## [. 🗝️ EN RÉSUMÉ](#en-resume)
 
 Le procédé n'est pas facile au premier abord et il convient d'être à l'aise avec la manipulation de votre téléphone portable et de `Git`. Une fois ce "gap" technique passé, les avantages sont notables et valent le coup d'investir des efforts à l'acquisition des connaissances techniques.  
 
