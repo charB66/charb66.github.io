@@ -40,7 +40,7 @@ Dans l'IT et particulièrement en cybersécurité il est important de synchronis
 5. 🗝️ EN RÉSUMÉ
 ## 1. 🤔 POURQUOI ?
 
-> Il m'est arrivé maintes fois de me perdre dans mes notes stockées sur une multitudes de supports. Le plus fréquent est lorsque je suis en pentest. Le dernier en date, je suis tombé sur une techno rarement utilisée, je me souvenais avoir mis de côté un article ou un outil à son sujet... mais... où ? 🫠. À ce moment précis je me suis dit qu'il fallait que stocke et gère mes notes dans un seul outil !
+> Il m'est arrivé maintes fois de me perdre dans mes notes stockées sur une multitude de supports. Le plus fréquent est lorsque je suis en pentest. Le dernier en date, je suis tombé sur une techno rarement utilisée, je me souvenais avoir mis de côté un article ou un outil à son sujet... mais... où ? 🫠. À ce moment précis je me suis dit qu'il fallait que je stocke et gère mes notes dans un seul outil !
 
 Dans les métiers de l'IT et d'autant plus en cybersécurité, la masse d'informations à lire, analyser et stocker est énorme ; bien trop dense pour ne pas avoir une judicieuse gestion de ses notes. Et cela commence par l'outil et le stockage de celles-ci.
 
