@@ -51,7 +51,7 @@ Dans l'IT et particulièrement en cybersécurité il est important de synchronis
 4. [🔄 RETOUR D'EXPÉRIENCE](#retex)
 5. [🗝️ EN RÉSUMÉ](#en-resume)
 
-## 1. 🤔 POURQUOI ? {#pourquoi}
+## [1. 🤔 POURQUOI ?](#pourquoi) {#pourquoi}
 
 > Il m'est arrivé maintes fois de me perdre dans mes notes stockées sur une multitude de supports. Le plus fréquent est lorsque je suis en pentest. Le dernier en date, je suis tombé sur une techno rarement utilisée, je me souvenais avoir mis de côté un article ou un outil à son sujet... mais... où ? 🫠. À ce moment précis je me suis dit qu'il fallait que je stocke et gère mes notes dans un seul outil !
 
@@ -64,18 +64,18 @@ Outre le fait d'utiliser - le bon outil de prise de note - il est primordial de 
 Un point est commun aux critères ci-dessus : **le stockage**, et qui dit stockage, dit **synchronisation**.
 
 Je détaille dans cet article comment **synchroniser** sur son ordinateur et son téléphone portable ses notes prises avec `Obsidian`.
-## 2 🏗️ MISE EN PLACE {#mise-en-place}
+## [2. 🏗️ MISE EN PLACE](#mise-en-place) {#mise-en-place}
 
 > Je veillerai à être aussi complet que possible dans mes explications, tout en évitant les informations superflues.
 
-### 2.1 Création du repository sur GitHub {#creation-repository}
+### [2.1 Création du repository sur GitHub](#creation-repository) {#creation-repository}
 
 Commençons par la création du repository sur `GitHub`. Le premier point sur lequel il est intéressant de vous pencher est sa visibilité : privé ou publique ?  
 Supposons que ce repository soit pour une prise de note personnelle, il se peut qu'il contienne des données à caractère personnel (`DCP`) ; respectons donc le `Zero Trust` en créant un repository privé.
 
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-1.png)  
 
-### 2.2 Création et configuration du token {#creation-token}
+### [2.2 Création et configuration du token](#creation-token) {#creation-token}
 
 L'application `Obsidian` mobile ne gère pas le protocole SSH, la solution de contournement la plus propre est d'utiliser le protocole `HTTPS` et un `token GitHub`.  
 La gestion des `tokens` se fait dans la section `Developer settings` des comptes `GitHub`. Parce que je suis sympa, voici [le lien](https://github.com/settings/tokens) d'accès (je vous en prie les feignants 🙃).  
@@ -92,7 +92,7 @@ Enfin, défilez en bas de page puis cliquez sur `Generate token`.
 
 >⚠️ Le token ne sera plus visible une fois la page courante fermée, il est impératif de le sauvegarder et de préférence dans un gestionnaire de mot de passe (KeePass, Bitwarden, Vaultwarden, Proton Pass, Enpass...).
 
-### 2.3 Clone du repository {#clone-repository}
+### [2.3 Clone du repository](#clone-repository) {#clone-repository}
 
 Dorénavant, tout est prêt ! 👏  
 C'est le moment de cloner le repository sur votre ordinateur. Rendez-vous sur la page du repository tout juste créé, sélectionnez le protocole `HTTPS` puis copiez l'url.
@@ -127,7 +127,7 @@ origin  https://github.com/charB66/notes_blog_demo.git (fetch)
 origin  https://github.com/charB66/notes_blog_demo.git (push)
 ```
 
-### 2.4 Configuration des informations d'utilisateur {#configuration-informations}
+### [2.4 Configuration des informations d'utilisateur](#configuration-informations) {#configuration-informations}
 
 Pour fonctionner correctement quelques informations de l'utilisateur `Git` doivent être configurées.  
 
@@ -140,7 +140,7 @@ Configuration de votre email :
 ```bash
 git config user.email "<email>"
 ```
-### 2.5 Configuration du .gitignore {#configuration-gitignore}
+### [2.5 Configuration du .gitignore](#configuration-gitignore) {#configuration-gitignore}
 
 Afin d'éviter de passer votre temps à gérer les conflits `git` (et je sais de quoi je parle), il est fortement conseillé de configurer le `.gitignore`. Ce fichier permet d'ajouter des exceptions qui ne seront pas synchronisées dans le repository.  
 Dans le contexte de repository utilisé avec `Obsidian`, il s'agit du `workspace` de ce dernier qui pose "problème". Les fichiers `.obsidian/workspace.json` et `.obsidian/workspace-mobile.json` sauvegardent l'espace de travail afin de retrouver - entre autre - les mêmes onglets ouverts à chaque lancement.  
@@ -153,7 +153,7 @@ echo ".obsidian/workspace.json\nworkspace-mobile.json" > .gitignore
 
 Et voici de nombreux cheveux blancs évités (trop tard me concernant). 🙃
 
-### 2.6 Premier commit & push {#premier-commit}
+### [2.6 Premier commit & push](#premier-commit) {#premier-commit}
 
 Avant d'activer et utiliser le plugin `Obsidian`, il est préférable de faire les premiers essais en ligne de commande.  
 
@@ -165,7 +165,7 @@ git add .
 git commit -m "Premier commit !"
 git push
 ```
-### 2.7 Configuration de Git dans Obsidian {#configuration-git-obsidian}
+### [2.7 Configuration de Git dans Obsidian](#configuration-git-obsidian) {#configuration-git-obsidian}
 
 Dans `Obsidian`, ouvrez un dossier en tant que `vault`.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-5.png)  
@@ -185,7 +185,7 @@ Cliquez sur `Browse` puis recherchez le plugin `Git`.
 Sélectionnez le plugin et cliquez sur `Install`, attendez l'installation puis cliquez sur `Enable`. Une fois l'activation terminée, cliquez sur `Options`. Je conseille d'activer la synchronisation automatique, cela simplifie l'usage, en particulier dans l'application mobile.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-10.png)  
   
-### 2.8 Test de bon fonctionnent {#test-fonctionnement}
+### [2.8 Test de bon fonctionnent](#test-fonctionnement) {#test-fonctionnement}
 
 Pour s'assurer du bon fonctionnement il est judicieux de modifier une note puis de pousser la mise à jour sur `GitHub`.  
 
@@ -203,7 +203,7 @@ Enfin, modifiez une note puis poussez manuellement la modification.
 Pensez à également vérifier sur `GitHub` que la note a bien été mise à jour.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-14.png)  
 
-### 2.9 Compression et téléchargement du vault {#telechargement}
+### [2.9 Compression et téléchargement du vault](#telechargement) {#telechargement}
 
 Enfin la concrétisation ; place à vos notes sur votre téléphone portable ! 📲   
 
@@ -215,7 +215,7 @@ Cette commande crée une archive .zip, téléchargez là sur votre téléphone p
 
 > Certaines des instructions suivantes sont effectuées depuis un iPhone ; je vous laisse le soin de les adapter pour Android. 😉
 
-### 2.10 Création du vault {#creation-vault}
+### [2.10 Création du vault](#creation-vault) {#creation-vault}
 
 En premier lieu, il convient de créer le `vault Obsidian` dans l'application mobile.  
 Celui-ci doit avoir exactement le même nom que le dossier du repository de vos notes sur votre ordinateur. Si votre dossier se nomme `notes_perso`, votre `vault Obsidian` doit se nommer `notes_perso`.
@@ -229,7 +229,7 @@ Décompressez l'archive .zip.
 Déplacer le dossier du repository dans le dossier de l'application mobile `Obsidian` (`Files` > `On My iPhone` > `Obsidian`). Si le nom est correct, un message vous avertissant qu'un dossier du même nom existe déjà ; choisissez "Replace".   
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-17.png)  
 
-### 2.11 Configuration du vault {#configuration-vault}
+### [2.11 Configuration du vault](#configuration-vault) {#configuration-vault}
 
 Rendez-vous dans les réglages : `Settings` > `Community plugins`.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-18.png)  
@@ -241,7 +241,7 @@ Appuyez sur `Browse` puis recherchez `Git`. Sélectionnez le premier de la liste
 Un nouvel écran apparaît vous demandant votre `username`, renseignez votre nom d'utilisateur `GitHub`. Une fois validé un autre écran apparaît vous demandant votre `Password/Personal access token`, renseignez votre `token (classic)` créé précédemment.  
 ![](/images/blog/articles/obsidian-notes-sync-mobile/obsidian-sync-20.png)  
 
-### 2.12 Test de bon fonctionnement multiplateforme {#test-multiplateforme}
+### [2.12 Test de bon fonctionnement multiplateforme](#test-multiplateforme) {#test-multiplateforme}
 
 Il est temps de tester le bon fonctionnement de la synchronisation entre l'application mobile et celle de votre ordinateur.  
 
@@ -274,7 +274,7 @@ La synchronisation via un repository `GitHub` est un excellent choix pour plusie
 
 L'avantage d'utiliser `GitHub` pour la synchronisation est que **vos notes sont disponibles partout, tout le temps**. Vous y avez accès sur tous vos supports, fixes, mobiles... et si vous n'avez pas accès à ceux-ci - par exemple en déplacement - vous pouvez les retrouver depuis n'importe quel navigateur web, directement sur le site de `GitHub` !
 
-## 4. 🔄 RETOUR D'EXPÉRIENCE {#retex}
+## [4. 🔄 RETOUR D'EXPÉRIENCE](#retex) {#retex}
 
 J'ai trouvé peu de ressources concernant les possibilités de synchronisation des notes sans passer par l'option payante d'`Obsidian`. Avec un peu de recherche, j'ai trouvé quelques informations sur des forums, des threads `Reddit`, le plus pertinent est ce [post](https://forum.obsidian.md/t/obsidian-git-sync-on-your-ios-without-any-extra-app/60639) sur le forum officiel `Obsidian`, mais cela reste succinct. Voici l'origine de ma volonté de vulgariser la procédure.  
 
@@ -282,7 +282,7 @@ Après 1 mois d'utilisation je suis conquis. Je prends plus de notes qu'auparava
 
 Je tiens à préciser que la facilité de prise de note peut mener à une surcharge informationnelle. Vous pouvez accumuler trop de données sans les structurer ni les prioriser. Une accumulation excessive des notes peut engendrer un encombrement cognitif, réduisant votre capacité à hiérarchiser et exploiter efficacement les données. Cela tombe bien, un article sur la méthodologie de prise de notes est en cours de rédaction. 😉
 
-## [. 🗝️ EN RÉSUMÉ](#en-resume) {#en-resume}
+## [5. 🗝️ EN RÉSUMÉ](#en-resume) {#en-resume}
 
 Le procédé n'est pas facile au premier abord et il convient d'être à l'aise avec la manipulation de votre téléphone portable et de `Git`. Une fois ce "gap" technique passé, les avantages sont notables et valent le coup d'investir des efforts à l'acquisition des connaissances techniques.  
 
