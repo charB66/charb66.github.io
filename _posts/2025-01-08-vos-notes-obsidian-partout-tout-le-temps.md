@@ -36,19 +36,19 @@ Dans l'IT et particulièrement en cybersécurité il est important de synchronis
 1. [🤔 POURQUOI ?](#pourquoi)  
 2. [🏗️ MISE EN PLACE](#mise-en-place)  
   2.1 [Création du repository sur GitHub](#creation-repository)  
-  2.2 Création et configuration du token  
-  2.3 Clone du repository  
-  2.4 Configuration des informations d'utilisateur  
-  2.5 Configuration du .gitignore  
-  2.6 Premier commit & push  
-  2.7 Configuration de Git dans Obsidian  
-  2.8 Test de bon fonctionnent  
-  2.9 Compression et téléchargement du vault  
-  2.10 Création du vault  
-  2.11 Configuration du vault 
-  2.12 Test de bon fonctionnement multiplateforme    
-3. 🏆 BÉNÉFICES
-4. 🔄 RETOUR D'EXPÉRIENCE
+  2.2 [Création et configuration du token](#creation-token)  
+  2.3 [Clone du repository](#clone-repository)  
+  2.4 [Configuration des informations d'utilisateur](#configuration-informations)  
+  2.5 [Configuration du .gitignore](#configuration-gitignore)  
+  2.6 [Premier commit & push](#premier-commit)  
+  2.7 [Configuration de Git dans Obsidian](#configuration-git-obsidian)  
+  2.8 [Test de bon fonctionnent](#test-fonctionnement)  
+  2.9 [Compression et téléchargement du vault](#telechargement)  
+  2.10 [Création du vault](#creation-vault)  
+  2.11 [Configuration du vault](#configuration-vault) 
+  2.12 [Test de bon fonctionnement multiplateforme](#test-multiplateforme)    
+3. [🏆 BÉNÉFICES]()
+4. [🔄 RETOUR D'EXPÉRIENCE]()
 5. [🗝️ EN RÉSUMÉ](#en-resume)
 
 ## 1. 🤔 POURQUOI ?{#pourquoi}
