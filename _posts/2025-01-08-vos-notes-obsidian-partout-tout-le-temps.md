@@ -65,7 +65,7 @@ Outre le fait d'utiliser - le bon outil de prise de note - il est primordial de 
 
 Un point est commun aux critères ci-dessus : **le stockage**, et qui dit stockage, dit **synchronisation**.
 
-### [1.1 BÉNÉFICES](#benefices) {#benefices}
+### [1.1 Bénéfices](#benefices) {#benefices}
 
 
 La synchronisation automatique des notes évite la multiplication des applications et/ou supports de notes. En n'ayant pas à rechercher **sur quel support** vous avez stocké votre note (sur mon téléphone ou mon ordinateur ?) ni **dans quelle application** (Obsidian ? Notion ? Mon application notes ? Un papier ?), l'accès à l'information est fluide et rapide. Cette fluidité est importante car il est vital de pouvoir se concentrer sur le contenu de la note et non la "logistique" autour. Il n'est déjà évident de prendre une note, il faut analyser l'information, la synthétiser... alors si à cela, vous ajoutez du "bruit" à votre pensée, vous vous éloignez de l'essence même du principe de prise de note.
