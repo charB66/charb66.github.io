@@ -34,7 +34,9 @@ Dans l'IT et particulièrement en cybersécurité il est important de synchronis
 ## 📜 Table des matières
 
 1. 🤔 POURQUOI ?
-2. 🏗️ MISE EN PLACE
+2. 🏗️ MISE EN PLACE  
+  2.1 Création du repository sur GitHub  
+  2.2 Création et configuration du token  
 3. 🏆 BÉNÉFICES
 4. 🔄 RETOUR D'EXPÉRIENCE
 5. 🗝️ EN RÉSUMÉ
@@ -51,7 +53,7 @@ Outre le fait d'utiliser - le bon outil de prise de note - il est primordial de 
 Un point est commun aux critères ci-dessus : **le stockage**, et qui dit stockage, dit **synchronisation**.
 
 Je détaille dans cet article comment **synchroniser** sur son ordinateur et son téléphone portable ses notes prises avec `Obsidian`.
-## 2. 🏗️ MISE EN PLACE
+## 2 🏗️ MISE EN PLACE
 
 > Je veillerai à être aussi complet que possible dans mes explications, tout en évitant les informations superflues.
 
