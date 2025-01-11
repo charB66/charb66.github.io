@@ -82,7 +82,9 @@ La synchronisation via un repository `GitHub` est un excellent choix pour plusie
 
 L'avantage d'utiliser `GitHub` pour la synchronisation est que **vos notes sont disponibles partout, tout le temps**. Vous y avez accès sur tous vos supports, fixes, mobiles... et si vous n'avez pas accès à ceux-ci - par exemple en déplacement - vous pouvez les retrouver depuis n'importe quel navigateur web, directement sur le site de `GitHub` !
 
-Je détaille dans cet article comment **synchroniser** sur son ordinateur et son téléphone portable ses notes prises avec `Obsidian`.
+---
+
+**🚀 Je détaille dans cet article comment **synchroniser** sur son ordinateur et son téléphone portable ses notes prises avec `Obsidian`.**
 
 ## [2. 🏗️ MISE EN PLACE](#mise-en-place) {#mise-en-place}
 
