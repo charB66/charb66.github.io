@@ -45,10 +45,10 @@ Dans l'IT et particulièrement en cybersécurité il est important de synchronis
   2.8 [Test de bon fonctionnent](#test-fonctionnement)  
   2.9 [Compression et téléchargement du vault](#telechargement)  
   2.10 [Création du vault](#creation-vault)  
-  2.11 [Configuration du vault](#configuration-vault) 
-  2.12 [Test de bon fonctionnement multiplateforme](#test-multiplateforme)    
+  2.11 [Configuration du vault](#configuration-vault)  
+  2.12 [Test de bon fonctionnement multiplateforme](#test-multiplateforme)  
 3. [🏆 BÉNÉFICES]()
-4. [🔄 RETOUR D'EXPÉRIENCE]()
+4. [🔄 RETOUR D'EXPÉRIENCE](#retex)
 5. [🗝️ EN RÉSUMÉ](#en-resume)
 
 ## 1. 🤔 POURQUOI ?{#pourquoi}
