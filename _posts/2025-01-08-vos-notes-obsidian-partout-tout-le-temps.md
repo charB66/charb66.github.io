@@ -84,7 +84,7 @@ L'avantage d'utiliser `GitHub` pour la synchronisation est que **vos notes sont 
 
 ---
 
-**🚀 Je détaille dans cet article comment **synchroniser** sur son ordinateur et son téléphone portable ses notes prises avec `Obsidian`.**
+**🚀 Je détaille dans cet article comment synchroniser sur son ordinateur et son téléphone portable ses notes prises avec `Obsidian`.**
 
 ## [2. 🏗️ MISE EN PLACE](#mise-en-place) {#mise-en-place}
 
