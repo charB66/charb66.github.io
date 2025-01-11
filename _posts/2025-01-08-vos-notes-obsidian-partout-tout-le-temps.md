@@ -7,8 +7,10 @@ categories: ["notes", "productivité"]
 tag: ["obsidian"]
 ---
 
-<p align="center">
+<p style="align:center;text-align:center">
   <img src="/images/blog/articles/obsidian-notes-sync-mobile/notes-obsidian.jpeg" alt="Banniere article"/>
+
+  Dans l'IT et particulièrement en cybersécurité il est important de synchroniser ses notes sur tous nos supports, ordinateur, téléphone portable, etc. Il est tout à fait possible de répondre à ce besoin en utilisant `Obsidian`, son plugin communautaire `Git` et un repository sur `GitHub`.
 </p>
 
 ## ⚡️ TL;DR {#tldr}
@@ -16,8 +18,6 @@ tag: ["obsidian"]
 >💡 Une précision avant de commencer  
  Le TL;DR s'adresse à ceux qui ont déjà un repository Git fonctionnel pour la synchronisation de leurs notes. Si c'est votre cas, vous pouvez suivre directement les étapes résumées ici.
  En revanche, si vous partez de zéro ou n'avez pas encore configuré de repository Git, je vous invite à lire l'article en entier, qui explique chaque étape en détail.
-
-Dans l'IT et particulièrement en cybersécurité il est important de synchroniser ses notes sur tous nos supports, ordinateur, téléphone portable, etc. Il est tout à fait possible de répondre à ce besoin en utilisant `Obsidian`, son plugin communautaire `Git` et un repository sur `GitHub`.
 
 **Prérequis** :
 - Un `vault Obsidian` existant.
