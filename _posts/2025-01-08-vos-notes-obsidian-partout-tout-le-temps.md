@@ -37,9 +37,19 @@ Dans l'IT et particulièrement en cybersécurité il est important de synchronis
 2. 🏗️ MISE EN PLACE  
   2.1 Création du repository sur GitHub  
   2.2 Création et configuration du token  
+  2.3 Clone du repository  
+  2.4 Configuration des informations d'utilisateur  
+  2.5 Configuration du .gitignore  
+  2.6 Premier commit & push  
+  2.7 Configuration de Git dans Obsidian  
+  2.8 Test de bon fonctionnent  
+  2.9 Compression et téléchargement du vault  
+  2.10 Création du vault  
+  2.11 Configuration du vault 
+  2.12 Test de bon fonctionnement multiplateforme    
 3. 🏆 BÉNÉFICES
 4. 🔄 RETOUR D'EXPÉRIENCE
-5. 🗝️ EN RÉSUMÉ
+5. [🗝️ EN RÉSUMÉ](#en-resume)
 ## 1. 🤔 POURQUOI ?
 
 > Il m'est arrivé maintes fois de me perdre dans mes notes stockées sur une multitude de supports. Le plus fréquent est lorsque je suis en pentest. Le dernier en date, je suis tombé sur une techno rarement utilisée, je me souvenais avoir mis de côté un article ou un outil à son sujet... mais... où ? 🫠. À ce moment précis je me suis dit qu'il fallait que je stocke et gère mes notes dans un seul outil !
@@ -272,7 +282,7 @@ Après 1 mois d'utilisation je suis conquis. Je prends plus de notes qu'auparava
 
 Je tiens à préciser que la facilité de prise de note peut mener à une surcharge informationnelle. Vous pouvez accumuler trop de données sans les structurer ni les prioriser. Une accumulation excessive des notes peut engendrer un encombrement cognitif, réduisant votre capacité à hiérarchiser et exploiter efficacement les données. Cela tombe bien, un article sur la méthodologie de prise de notes est en cours de rédaction. 😉
 
-## 5. 🗝️ EN RÉSUMÉ
+## 5. 🗝️ EN RÉSUMÉ {#en-resume}
 
 Le procédé n'est pas facile au premier abord et il convient d'être à l'aise avec la manipulation de votre téléphone portable et de `Git`. Une fois ce "gap" technique passé, les avantages sont notables et valent le coup d'investir des efforts à l'acquisition des connaissances techniques.  
 
