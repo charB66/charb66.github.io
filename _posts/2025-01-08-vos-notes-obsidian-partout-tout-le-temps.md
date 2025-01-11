@@ -50,9 +50,8 @@ tag: ["obsidian"]
   2.10 [Création du vault](#creation-vault)  
   2.11 [Configuration du vault](#configuration-vault)  
   2.12 [Test de bon fonctionnement multiplateforme](#test-multiplateforme)  
-3. [🏆 BÉNÉFICES]()
-4. [🔄 RETOUR D'EXPÉRIENCE](#retex)
-5. [🗝️ EN RÉSUMÉ](#en-resume)
+3. [🔄 RETOUR D'EXPÉRIENCE](#retex)
+4. [🗝️ EN RÉSUMÉ](#en-resume)
 
 ## [1. 🤔 POURQUOI ?](#pourquoi) {#pourquoi}
 
