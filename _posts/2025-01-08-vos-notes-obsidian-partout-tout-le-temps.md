@@ -294,4 +294,4 @@ Je tiens à préciser que la facilité de prise de note peut mener à une surcha
 
 Le procédé n'est pas facile au premier abord et il convient d'être à l'aise avec la manipulation de votre téléphone portable et de `Git`. Une fois ce "gap" technique passé, les avantages sont notables et valent le coup d'investir des efforts à l'acquisition des connaissances techniques.  
 
-N'hésitez pas à me faire vos retours (en commentaire ou via mes contacts sur ma page [about](#about)) sur la mise en place et l'utilisation de cette méthode !
+N'hésitez pas à me faire vos retours (en commentaire ou via mes contacts sur ma page [about](https://charb66.fr/pages/about-me/)) sur la mise en place et l'utilisation de cette méthode !
